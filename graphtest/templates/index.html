@@ -1,0 +1,17 @@
+{% load static %}
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Graphene/Neo4j &amp; Django Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    {% block styles %}{% render_bundle 'main' 'css' %}{% endblock %}
+</head>
+<body>
+{% block body %}<div id="root">{% block content %}{% endblock %}</div>{% endblock %}
+{% render_bundle 'vendor' 'js' %}
+{% render_bundle 'main' 'js' %}
+</body>
+</html>

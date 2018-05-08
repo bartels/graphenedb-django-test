@@ -1,0 +1,68 @@
+// scss-lint:disable ColorVariable
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+p {
+    margin: 2em 0;
+}
+
+a {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+
+.App {
+    padding: 20px;
+
+    &__query-form {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 16px;
+        }
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    button {
+        padding: 7px 10px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    pre {
+        background: #eee;
+        border: solid 1px #aaa;
+        padding: 10px;
+        white-space: pre-wrap;
+    }
+}

@@ -1,0 +1,16 @@
+[ignore]
+.*/node_modules/.*/fbjs/.*
+.*/node_modules/.*\(lib\|test\).*\.json$
+
+[include]
+./app/
+
+[libs]
+./flow/libs
+./flow-typed
+
+[options]
+esproposal.export_star_as=enable
+module.name_mapper='^~/\(.*\)$' -> '<PROJECT_ROOT>/app/\1'
+module.name_mapper='.*\(.s?css\)' -> 'empty/object'
+module.name_mapper='.*\.\(svg\|png\|jpg\|gif\)$' -> 'empty/object'

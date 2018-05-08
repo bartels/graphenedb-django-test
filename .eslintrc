@@ -1,0 +1,62 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+  },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+      "flowtype",
+      "react",
+      "import",
+    ],
+    "extends": [
+      "plugin:flowtype/recommended",
+      "airbnb",
+    ],
+    "rules": {
+      "linebreak-style": ["error", "unix"],
+      "indent": ["error", 2, {"SwitchCase": 1}],
+      "semi": ["error", "never"],
+      "semi-style": "off",
+      "brace-style": ["error", "stroustrup", {"allowSingleLine": true}],
+
+      "no-unused-vars": ["error", {"vars": "local", "args": "none"}],
+      "no-use-before-define": ["error", { "functions": false, "classes": true }],
+      "no-nested-ternary": "off",
+      "arrow-parens": "off",
+      "object-curly-newline": ["error", { "multiline": true, "consistent": true }],
+      "prefer-destructuring": "off",
+
+      "import/no-unresolved": ["error", {commonjs: true}],
+      "import/named": "error",
+      "import/no-named-default": "off",
+      "import/no-named-as-default": "off",
+      "import/namespace": "error",
+      "import/default": "error",
+      "import/imports-first": ["error", "absolute-first"],
+      "import/prefer-default-export": "off",
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+
+      "react/display-name": "off",
+      "react/jsx-filename-extension": "off",
+      "react/jsx-closing-bracket-location": ["error", { "selfClosing": "line-aligned", "nonEmpty": false }],
+      "react/sort-comp": "off",
+      "react/no-unused-prop-types": "off",
+      "react/require-default-props": "off",
+
+      "jsx-a11y/no-static-element-interactions": "off",
+      "jsx-a11y/click-events-have-key-events": "off",
+      "jsx-a11y/anchor-is-valid": ["error", { "components": [] }],
+      "jsx-a11y/label-has-for": "off",
+    },
+    "settings": {
+      "import/resolver": "webpack"
+    }
+}

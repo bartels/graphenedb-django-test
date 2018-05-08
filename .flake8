@@ -1,0 +1,10 @@
+[flake8]
+max-line-length=100
+ignore = E126,E124,E402,X100
+exclude = 
+    manage.py,
+    migrations,
+    node_modules
+per-file-ignores =
+    settings.py: F403,F405
+    */config/*.py: F403,F405,E501

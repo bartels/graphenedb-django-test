@@ -1,0 +1,11 @@
+*.py[co]
+*.sw[po]
+*.sqlite
+*.DS_Store
+Session.vim
+node_modules
+/static/bundle
+/tmp
+*/config/local.py
+.eslintcache
+.tmuxrc
