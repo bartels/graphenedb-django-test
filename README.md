@@ -1,6 +1,15 @@
-Get the code
-------------
+# Neo4j CQL Django Test
 
-Clone git repo:
+Demoing a Django/Python wrapper around Neo4j's CQL queries using the
+[neo4j-driver](https://github.com/neo4j/neo4j-python-driver) python package.
 
-    git clone git@bitbucket.org:ebartels/graphtest.git
+
+## Demo
+
+[View Demo Page]()
+
+
+## Relevant source files
+
+React code here: [app/App.js](app/App.js)  
+Django code here: [graphtest/api/views.py](graphtest/api/views.py)
